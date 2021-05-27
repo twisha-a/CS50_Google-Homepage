@@ -1,0 +1,126 @@
+body{
+    margin: 20px;
+    padding: 20px;
+}
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+
+/*NAVBAR START*/
+#navbar{
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 60px 40px;
+    grid-template-rows: 50px;
+    grid-template-areas: "About Store .  Gmail Images menu sign_in" ;
+
+}
+#navbar a {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+}
+#About    {
+    grid-area:About ;
+}
+#Store {
+    grid-area:Store ;
+}
+#Gmail {
+    grid-area: Gmail;
+}
+#Images {
+    grid-area:Images ;
+}
+#menu {
+    grid-area: menu;
+}
+#sign_in {
+    grid-area:sign_in ;
+}
+
+/*NAVBAR END*/
+
+
+/*MAIN START*/
+#main{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 70px 70px 240px;;
+    grid-template-areas: 
+    ". logo ."
+    ". search_box ."
+    ". search_button ."
+    ". lang .";
+}
+#logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+
+}
+#search_box{
+    grid-area: search_box;
+    height: 30px;
+    /* width: 80%;*/
+    align-self: center;
+    justify-self: center;
+    /* border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px; */ 
+}
+#search_button {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+    margin-left: 100px;
+}
+#search1{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+#search2{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+}
+#lang {
+    grid-area: lang;
+    justify-self: center;
+    padding-top: 50px ;
+}
+#search_input{
+    height: 30px;
+    /* width: 80%; */
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+}
